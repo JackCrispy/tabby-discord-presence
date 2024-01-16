@@ -1,7 +1,7 @@
 {
-  "name": "discord-rich-presence",
+  "name": "tabby-discord-presence",
   "version": "1.0.0",
-  "description": "A plugin that adds a rich presence for discord with tabby",
+  "description": "Adds a Rich Presence for discord to Tabby Terminal",
   "keywords": [
     "tabby-plugin"
   ],
