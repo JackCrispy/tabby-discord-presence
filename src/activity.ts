@@ -36,20 +36,22 @@ function getTime() {
 
 function setActivity(rpc) {
     let stateName = `Viewing (1 of ${amountOfTabs}) tabs`
+    let smallImageTextD = `Viewing ${activeTabName}`
     if (activeTabName !== "Settings") smallImgActivity = "terminal_2"
     if (activeTabName === "Settings") smallImgActivity = "settings"
 
     if (idle === true) stateName = "Idle"
     if (idle === true) smallImgActivity = "idle"
+    if (idle === true) smallImageTextD = "zZz"
     
     rpc.setActivity({
         details: stateName,
         state: activeTabName,
         largeImageKey: 'tabby',
         startTimestamp: timeNow,
-        largeImageText: 'Tabby Terminal',
+        largeImageText: 'tabby.sh',
         smallImageKey: smallImgActivity,
-        smallImageText: `Viewing ${activeTabName}`,
+        smallImageText: smallImageTextD,
         instance: false,
     });
 }

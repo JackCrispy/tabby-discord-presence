@@ -2,4 +2,4 @@
 
 #### For the Tabby terminal
 
-![Screenshot](./screenshot.png)
+![Screenshot](https://i.imgur.com/taNoVEQ.png)
